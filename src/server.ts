@@ -1,7 +1,7 @@
 import express from "express";
 import payload from "payload";
 
-require("dotenv").config();
+import "dotenv/config";
 const app = express();
 
 // Redirect root to Admin panel
