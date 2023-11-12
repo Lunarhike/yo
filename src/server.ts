@@ -4,6 +4,8 @@ import payload from "payload";
 import "dotenv/config";
 const app = express();
 
+//t
+
 // Redirect root to Admin panel
 app.get("/", (_, res) => {
   res.redirect("/admin");
