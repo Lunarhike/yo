@@ -18,7 +18,7 @@ WORKDIR /home/node/app
 COPY package*.json  ./
 COPY package-lock.json ./
 
-RUN npm install --production
+RUN npm install --production --omit-dev
 COPY --from=builder /home/node/app/dist ./dist
 COPY --from=builder /home/node/app/build ./build
 
